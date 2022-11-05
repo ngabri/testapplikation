@@ -1,0 +1,45 @@
+<app-search></app-search>
+
+<!-- <div class="offset-xl-1"> -->
+<!-- <div class="col-md-12"> -->
+  <div class="scrollable">
+<table mdbTable mdbTableScroll class="table">
+  <thead>
+    <tr>
+      <th scope="col">Vorname</th>
+      <th scope="col">Nachname</th>
+      <th scope="col">Telefon</th>
+      <th scope="col">Datum</th>
+      <th scope="col">Spielanfang</th>
+      <th scope="col">Spielende</th>
+      <th scope="col">Spielraum</th>
+      <th scope="col">Zusatzraum</th>
+      <th scope="col">Aktionen</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <ng-container *ngFor="let reservation of (reservations$ | async)">
+      <!-- {{reservation | json }} -->
+      <tr>
+        <td>{{ reservation.firstname }}</td>
+        <td>{{ reservation.lastname }}</td>
+        <td>{{ reservation.telefon }}</td>
+        <td>{{ reservation.res_date | date: 'dd.MM.yyyy' }}</td>
+        <td>{{ reservation.start_time }}</td>
+        <td>{{ reservation.end_time }}</td>
+        <td>{{ reservation.roomname}}</td>
+        <td>{{ reservation.additionalroom}}</td>
+        <td>
+          <div class="col-sm-8 col-md-8">
+          <button mdbBtn type="button" color="default" size="sm" (click)="onOpenModal()"><mdb-icon far icon="edit"></mdb-icon> Edit</button>
+          <button mdbBtn type="button2" color="danger" size="sm" (click)="deleteItem(reservation.customer_id)"><mdb-icon fas icon="trash-alt"></mdb-icon>Delete</button>
+          </div>
+        </td>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>
+</div>
+<!-- </div> -->
+

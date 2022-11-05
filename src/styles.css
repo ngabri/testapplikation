@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin-bottom: 10px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background: url("https://c1.wallpaperflare.com/preview/972/1017/251/billiards-sport-balls-plugs.jpg")no-repeat center center;
+    background-size: cover;
+}
+
+.main {
+    position: relative;
+    margin-top: 56px; /* Höhenabstand der Navigation */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+

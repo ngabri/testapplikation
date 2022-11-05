@@ -1,0 +1,30 @@
+#nav a {
+  width: 33.3%;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  height: 30px;
+  background-color: teal;
+
+
+}
+
+#nav a:hover{
+  background-color: rgb(10, 10, 80);
+}
+
+#hellgreen {
+  border-top: solid 5px lightgreen;
+}
+
+#yellow {
+  border-top: solid 5px rgb(200, 255, 0);
+}
+
+#orange {
+  border-top: solid 5px rgb(0, 255, 76);
+}
+
+

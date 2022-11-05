@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/v4-shims.css">
+<div class="login">
+  <div class="full-bg-img mask rgba-gradient">
+    <div class="container flex-center">
+      <div class="d-flex align-items-center content-height w-100">
+        <div class="row flex-center pt-5 mt-3 w-100">
+          <div class="col-md-6 text-center text-md-left mb-5">
+          </div>
+          <!--Form-->
+          <div class="col-md-6 col-xl-5 offset-xl-1">
+            <mdb-card class="wow fadeInRight" data-wow-delay="0.3s">
+              <mdb-card-body>
+                <!--Header-->
+                <div class="text-center">
+                  <h3 class="text-white">
+                    <mdb-icon fas icon="user"></mdb-icon> Login
+                  </h3>
+                  <hr class="hr-light">
+                </div>
+                <!--Body-->
+                <div class="md-form">
+                  <mdb-icon fas icon="user" class="text-white active"></mdb-icon>
+                  <input type="text" id="form3" class="text-white form-control" mdbInput>
+                  <label for="form3" class="text-white">Name</label>
+                </div>
+                <div class="md-form">
+                  <mdb-icon fas icon="envelope" class="text-white active"></mdb-icon>
+                  <input type="email" id="form2" class="text-white form-control" mdbInput>
+                  <label for="form2" class="text-white">Email</label>
+                </div>
+                <div class="md-form">
+                  <mdb-icon fas icon="lock" class="text-white active"></mdb-icon>
+                  <input type="password" id="form4" class="text-white form-control" mdbInput>
+                  <label for="form4" class="text-white">Password</label>
+                </div>
+                <div class="text-center mt-4">
+                  <button mdbBtn color="default" routerLink="navigation" routerLinkActive="active">Anmelden</button>
+                  <hr class="hr-light mb-3 mt-4">
+                  <!-- Social Buttons-->
+                  <div class="socialButtons">
+                    <ul class=" list-inline text-center">
+                      <li class="list-inline-item px-2">
+                        <a style="color: #3b5998;">
+                          <i class="fab fa-facebook-f fa-lg"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item px-2">
+                        <a style="color: #060707;">
+                          <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item px-2">
+                        <a style="color: #ac2bac;">
+                          <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="text-white">
+                    <a>oder </a>
+                  </div>
+                  <div class="inline-ul text-center d-flex justify-content-center">
+                    <div class="p-2 m-2 tw-ic">
+                      <button mdbBtn color="blue-grey" routerLink="register" routerLinkActive="active">Neues Konto
+                        erstellen
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </mdb-card-body>
+            </mdb-card>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

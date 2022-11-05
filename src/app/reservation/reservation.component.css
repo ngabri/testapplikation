@@ -1,0 +1,20 @@
+.table{
+  border: 1px solid rgb(250, 247, 247);
+  padding: 5px;
+  margin: 5% 0;
+  box-shadow: 3px 3px 2px rgb(247, 245, 245);
+  transition: 0.5s;
+  width: 100%;
+  background-color: white;
+  }
+.table:hover{
+  box-shadow: 3px 3px 0px transparent;
+  transition: 0.5s;
+  }
+
+  .scrollable {
+    margin-top: 50px;
+    height: 700px;
+    overflow: scroll;
+  }
+

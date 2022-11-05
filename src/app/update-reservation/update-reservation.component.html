@@ -1,0 +1,63 @@
+<div class="modal-body">
+  <div class="modal-header">
+    <h1>Kunde</h1>
+    <button type="button" class="close" aria-label="Close" (click)="closeModal()">
+      <span aria-hidden="true"><i class="fa fa-times"></i></span>
+    </button>
+  </div>
+
+  <div class="modal-body">
+    <div class="col-lg-12 well">
+      <div class="row">
+        <form>
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <label>Vorname</label>
+                <input type="text" placeholder="Enter Vorname Here.." class="form-control">
+              </div>
+              <div class="col-sm-6 form-group">
+                <label>Nachname</label>
+                <input type="text" placeholder="Enter Nachname Here.." class="form-control">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Telefon</label>
+              <input type="tel" placeholder="Enter Telefon Here.." class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Datum</label>
+              <input type="date" placeholder="Enter Datum Here.." class="form-control">
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <label>Spielanfang</label>
+                <input type="time" placeholder="Enter Spielanfang Here.." class="form-control">
+              </div>
+              <div class="col-sm-6 form-group">
+                <label>Spielende</label>
+                <input type="time" placeholder="Select Spielende Here.." class="form-control">
+              </div>
+
+            </div>
+            <div class="form-group">
+              <label>Spielraum</label>
+              <select class="form-control">
+                <option>Bowlingraum1</option>
+                <option>Bowlingraum2</option>
+                <option>Bowlingraum3</option>
+                <option>Billiardraum1</option>
+                <option>Billiardraum2</option>
+                <option>Billiardraum3</option>
+              </select>
+            </div>
+
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-secondary" (click)="submitData()" type="submit">
+              speichern
+            </button>
+          </div>

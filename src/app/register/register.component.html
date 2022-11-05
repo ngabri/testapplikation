@@ -1,0 +1,84 @@
+<div class="login">
+
+    <div class="view intro-2">
+        <div class="full-bg-img mask rgba-gradient">
+            <div class="container flex-center">
+                <div class="d-flex align-items-center content-height w-100">
+                    <div class="row flex-center pt-5 mt-3 w-100">
+                        <div class="col-md-6 text-center text-md-left mb-5">
+
+                        </div>
+
+                        <!--Form-->
+                        <div class="col-md-6 col-xl-5 offset-xl-1">
+                            <mdb-card class="wow fadeInRight" data-wow-delay="0.3s">
+                                <mdb-card-body>
+                                    <!--Header-->
+                                    <div class="text-center">
+                                        <h3 class="text-white">
+                                            <mdb-icon fas icon="user"></mdb-icon> Registrieren
+                                        </h3>
+                                    </div>
+                                    <!--Body-->
+                                    <div class="md-form">
+                                        <input type="text" id="form3" class="text-black form-control" mdbInput>
+                                        <label for="form3" class="text-white">Name</label>
+                                    </div>
+                                    <div class="md-form">
+                                        <mdb-icon fas icon="envelope active"></mdb-icon>
+                                        <input type="email" id="form2" class="text-black form-control" mdbInput>
+                                        <label for="form2" class="text-white">Email</label>
+                                    </div>
+                                    <div class="md-form">
+                                        <mdb-icon fas icon="lock" class="text-white active"></mdb-icon>
+                                        <input type="password" id="form4" class="text-black form-control" mdbInput>
+                                        <label for="form4" class="text-white">Password</label>
+                                    </div>
+                                    <div class="md-form">
+                                        <mdb-icon fas icon="lock" class="text-white active"></mdb-icon>
+                                        <input type="password" id="form4" class="text-black form-control" mdbInput>
+                                        <label for="form4" class="text-white">Password wiederholen</label>
+                                    </div>
+                                    <div class="text-center mt-4">
+                                        <button mdbBtn color="default" (click)="onPress()">Registrieren</button>
+                                        <div id="registrieren">
+                                            <app-login *ngIf="display"></app-login>
+                                        </div>
+                                        <hr class="hr-light mb-3 mt-4">
+                                    </div>
+                                </mdb-card-body>
+                            </mdb-card>
+
+
+
+                            <!-- </div> -->
+                            <!-- <div class="socialButtons">
+                <ul class=" list-inline text-center">
+                    <li class="list-inline-item px-2">
+                      <a style="color: #3b5998;">
+                      <i class="fab fa-facebook-f fa-lg"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item px-2">
+                      <a style="color: #55acee;">
+                      <i class="fab fa-twitter fa-lg"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item px-2">
+                      <a style="color: #ac2bac;">
+                      <i class="fab fa-instagram fa-lg"></i>
+                      </a>
+                    </li>
+                  </ul> 
+        
+            </div> -->
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
